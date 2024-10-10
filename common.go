@@ -1,4 +1,4 @@
-package ds_hw_0
+package main
 
 import "log"
 
