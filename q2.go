@@ -46,9 +46,8 @@ func sum(num int, fileName string) int {
 	checkError(err)
 
 	// Create buffered channel
-	intsBuffer := len(ints) / num  // Buffer size. 파이썬과 다르게 몫을 반환
-	sumChan := make(chan int, num) // 부분합들을 저장할 채널
-
+	intsBuffer := len(ints) / num  
+	sumChan := make(chan int, num) 
 	// Create workers
 	for i := 0; i < num; i++ {
 		intsChan := make(chan int, intsBuffer)
