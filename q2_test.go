@@ -1,4 +1,4 @@
-package ds_hw_0
+package main
 
 import (
 	"fmt"
@@ -28,3 +28,4 @@ func Test3(t *testing.T) {
 func Test4(t *testing.T) {
 	test(t, "q2_test2.txt", 10, 117652)
 }
+
