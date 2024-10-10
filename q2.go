@@ -74,10 +74,6 @@ func sum(num int, fileName string) int {
 	return sum
 }
 
-// Read a list of integers separated by whitespace from `r`.
-// Return the integers successfully read with no error, or
-// an empty slice of integers and the error that occurred.
-// Do NOT modify this function.
 func readInts(r io.Reader) ([]int, error) {
 	scanner := bufio.NewScanner(r)
 	scanner.Split(bufio.ScanWords)
